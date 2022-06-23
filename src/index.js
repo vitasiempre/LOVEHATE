@@ -1,3 +1,38 @@
+// const Twit = require('twit')
+// const Twitter = require('twitter-v2');ааааа
+//
+// consumer_key: "8ZZhG4sb0YB5rhQGWH6wBoSSF",
+//   consumer_secret: "UxH3HOTKSokQJwYz1UYi15w1YrN6crAzdk34ICoDI2x7UUFfZd",
+//   access_token_key: "722011386134544384-MHF6uswESAAxkqdke3Oc1JAyV39iBjC",
+//   access_token_secret: "xlaXurYXRXwzBQtFrg4PeUcYbOHsuHIQOdxcIZLUzBrHU",
+//   bearer_token: "AAAAAAAAAAAAAAAAAAAAAHFIeAEAAAAAyxZHe8mVWe6vBrf6LyjCu6BrpEw%3DN7J3OacND4q9bsMxFzGV2TMwmcCm2wZUbTtzhCySFqoR2xU3ZR"
+//
+// var client = new Twitter({
+//   consumer_key: "8ZZhG4sb0YB5rhQGWH6wBoSSF",
+  // consumer_secret: "UxH3HOTKSokQJwYz1UYi15w1YrN6crAzdk34ICoDI2x7UUFfZd",
+  // access_token_key: "722011386134544384-MHF6uswESAAxkqdke3Oc1JAyV39iBjC",
+  // access_token_secret: "xlaXurYXRXwzBQtFrg4PeUcYbOHsuHIQOdxcIZLUzBrHU",
+  // bearer_token: "AAAAAAAAAAAAAAAAAAAAAHFIeAEAAAAAyxZHe8mVWe6vBrf6LyjCu6BrpEw%3DN7J3OacND4q9bsMxFzGV2TMwmcCm2wZUbTtzhCySFqoR2xU3ZR"
+// });
+//
+// const stream = client.stream('statuses/filter', {track: ['#travel']});
+//
+//
+// (async() => {
+//
+//   console.log("gey");
+//
+//   // // Close the stream after 30s.
+//   // setTimeout(() => {
+//   //   stream.close();
+//   // }, 30000);
+//
+//   for await (const { data } of stream) {
+//     console.log(data);
+//   }
+//
+// })()
+
 import { ETwitterStreamEvent, TweetStream, TwitterApi, ETwitterApiError } from 'twitter-api-v2';
 
 const clientLove = new TwitterApi( "AAAAAAAAAAAAAAAAAAAAAHFIeAEAAAAAyxZHe8mVWe6vBrf6LyjCu6BrpEw%3DN7J3OacND4q9bsMxFzGV2TMwmcCm2wZUbTtzhCySFqoR2xU3ZR"
